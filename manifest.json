@@ -1,0 +1,18 @@
+{
+  "short_name": "Manifest",
+  "name": "JATE",
+  "icons": [
+    {
+      "src": "path.resolve('src/images/logo.png')",
+      "size": 96,
+      "destination": "path.join('./assets', 'icons')",
+      "inject": "true"
+    }
+  ],
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./",
+  "description": "Keep track of important tasks!",
+  "background_color": "#7eb4e2",
+  "theme_color": "#7eb4e2"
+}

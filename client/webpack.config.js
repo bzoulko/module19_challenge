@@ -26,9 +26,8 @@ module.exports = () => {
         title: 'Webpack Plugin',
       }),
       new MiniCssExtractPlugin(),
-      new WorkboxPlugin.GenerateSW(),
       new WebpackPwaManifest({
-        filename: "manifest.json",
+        "$schema": "manifest.json",
         name: 'JATE',
         short_name: 'JATE',
         description: 'Just Another Text Editor!',
@@ -47,6 +46,7 @@ module.exports = () => {
         orientation: "portrait",
         display: "standalone",      
       }),
+      new WorkboxPlugin.GenerateSW(),
       // new InjectManifest({
       //   swSrc: './src-sw.js',
       //   swDest: 'service-worker.js',

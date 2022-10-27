@@ -192,6 +192,36 @@ h1 {
   background-color: #31a9e1;
 }
 
+/* ******************************************************* */
+/* TOOL-TIP for the bottom of the screen like in the demo. */
+/* ******************************************************* */
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: white;
+  z-index: 1;
+  top: 80%;
+  left: 60%;
+  margin-left: -90px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+}
+
+.tooltip {
+  display: flex;
+  margin-top: auto;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* ******************************************************* */
+
 @media only screen and (max-width: 600px) {
   .nav-btn {
     display: none;
