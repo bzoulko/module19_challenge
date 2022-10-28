@@ -1,52 +1,19 @@
 # Module 19 Challenge Project - Progressive Web Application (PWA) Challenge: Text Editor
-This program is an NoSQL database, using MongoDB to internally manage the data. The server runs on a localhost:3001 and allows you to run a PUT, GET, DELETE, POST via insomnia. Please take time to listen to the walkthrough video that shows how to add, remove and update data to this social network. 
+This program is a text editor that runs in the browser. This single page application uses PWA and a number of data persistence techniques that make it robust and resiliant to functioning offline. By storing data in an indexedDB database along with a lightweight wrapper around the IndexedDB API.
 
 
-## Running the Social Network API
-* From the Terminal prompt, in this projects main folder, type "node ./server.js". This starts the application that will be running on localhost:30001 while the user can minipulate data using insomnia. I've created the following, for a lack of terms, tables that manage and cross reference into one another:
+## Running the Text Editor
+* From the Terminal prompt, in this projects main folder you can perform a series of script functions that will compact, build and startup the PWA. Here are a list of scripts that are available to run via the terminal:
+    * start:dev     : Concurrently changes to the client folder, runs the build then changes to the server folder to start the server.
+    * start         : Runs the build and changes to the server folder to start the server.
+    * server        : Changes to the server folder and starts the server.
+    * build         : Changes to the client folder and runs the build.
+    * install       : Changes to the client folder and installs node modules.
+    * client        : Changes to the client folder and runs the build, then starts the server.
 
-    - Users
+* The text editor uses local storage to maintain the information keyed into it. By using IndexedDB the application is able to store and retrieve data even if the browser goes offline. Meaning the application witll still function without having the internet available.
 
-        * DEL  - You can remove an user by id.
-        * PUT  - Update user(s) 
-        * GET  - Display all users in the table.
-        * GET  - You can also get a user by the Id.
-        * POST - Create a new user or users by JSON format.
-
-        * Field Layout for Users:
-            - username      : Format - string, unique, required entry, and trimmed
-            - email         : Format - string, unique, required entry, and must match a valid email address.
-            - thoughts      : Format - array of Id's referencing the Thought model.
-            - friends       : Format - array of Id's referencing the User model.
-            - friendCount   : Format - virtual that shows the number of friends for a user.
-
-
-    - Reactions
-
-        * DEL  - You can remove an reaction by id.
-        * POST - Create a new reaction or reactions by JSON format.
-
-        * Field Layout for Reactions:
-            - reactionId    : Format - objectId, default - new ObjectId.
-            - reactionBody  : Format - string, required entry, and has a maximum number of 28 characters.
-            - username      : Format - string, required entry.
-            - createdAt     : Format - date, default = now, getter method for formatting the timestamp.
-
-
-    - Thoughts
-
-        * POST - Create a new thought or thouhgts by JSON format.
-        * PUT  - Update thoughts(s) 
-        * GET  - Display all thoughts in the table.
-        * GET  - You can also get a thought by the Id.
-
-        * Field Layout for Reactions:
-            - thoughtText   : Format - string, required entry, and must be between 1 and 280 characters.
-            - createdAt     : Format - date, default = now, getter method for formatting the timestamp.
-            - username      : Format - string, required entry
-            - reactions     : Format - array of nested documents.
-            - reactionCount : Format - virtual that shows the number of reactions for a thought.
-
+* You also have the option to click on a button in the upper lefthand corner of the application that will install the PWA on your local system so you can run it independantly. Making it look and feel as if it were a seperate application on your pc.
 
 
 ### Special Notes:
@@ -56,9 +23,23 @@ This program is an NoSQL database, using MongoDB to internally manage the data. 
     - routes : Controllers for routing the API data accordingly.
 
 * Packages installed for this application were:
-    - MongoDB : JSON data that controls how the information is stored.
-    - Mongoose : Used to work and minipulate some of the JSON/DB data. 
-    - Express : Express is used to assist in running the server on localhost:3001.
+    - @babel/core
+    - @babel/plugin-transform-runtime
+    - @babel/preset-env
+    - @babel/runtime
+    - babel-loader
+    - css-loader
+    - html-webpack-plugin
+    - http-server
+    - mini-css-extract-plugin
+    - style-loader
+    - webpack
+    - webpack-cli
+    - webpack-dev-server
+    - webpack-pwa-manifest
+    - workbox-webpack-plugin
+    - code-mirror-themes
+    - idb
 
 * Link to Heroku.
 
