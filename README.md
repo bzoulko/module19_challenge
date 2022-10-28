@@ -18,9 +18,22 @@ This program is a text editor that runs in the browser. This single page applica
 
 ### Special Notes:
 * The server.js file is the main driver for starting the application server. Then I've created a structured layout for the javascript project itself. You will see the following folders: 
-    - config : Contains the configuration settings for the mongoDB.
-    - models : Houses your three different tables for Getting, Putting, Posting, and Deleting detail.
-    - routes : Controllers for routing the API data accordingly.
+    
+    - client
+    
+      * dist - Deployment for PWA package.
+      
+      * src - Folder for client data files.
+      
+         * css - Style Sheets
+         
+         * images - Image Icons
+         
+         * js  - Javascript Constrol Files.
+         
+    - server
+      
+      * routes - API Controller for server connection.
 
 * Packages installed for this application were:
     - @babel/core
