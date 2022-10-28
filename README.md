@@ -58,4 +58,12 @@ This program is a text editor that runs in the browser. This single page applica
 https://aqueous-beach-61462.herokuapp.com/
 
 ### Screen Shots.
-
+![image](https://user-images.githubusercontent.com/108200823/198682106-d5e2a9f3-957f-45a6-a529-dd84098ec141.png)
+![image](https://user-images.githubusercontent.com/108200823/198682176-f6fa7871-fa10-499b-a117-ceffeb75577d.png)
+![image](https://user-images.githubusercontent.com/108200823/198682239-35b6c68e-b6ea-4f5c-b45e-712d9e6eec7a.png)
+![image](https://user-images.githubusercontent.com/108200823/198682491-7424a22a-2903-40b0-afb3-c72c1a64759f.png)
+![image](https://user-images.githubusercontent.com/108200823/198682641-864f4750-6849-4894-91de-57cc6f547ec5.png)
+![image](https://user-images.githubusercontent.com/108200823/198682732-03ca284c-e68a-4631-b158-82fa7e729850.png)
+![image](https://user-images.githubusercontent.com/108200823/198683313-9421529e-a6e9-4404-8dde-a618cbc726d9.png)
+![image](https://user-images.githubusercontent.com/108200823/198683358-53ac4c36-bae2-47e3-a994-d87ce231b47e.png)
+![image](https://user-images.githubusercontent.com/108200823/198683496-3b5d55bd-24e0-4586-af86-ac0a6baf2fe6.png)
