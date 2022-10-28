@@ -13,8 +13,6 @@ window.addEventListener('beforeinstallprompt', (event) => {
     butInstall.addEventListener('click', async () => {
         event.prompt();
         console.log("button clicked...");
-        butInstall.setAttribute('disabled', true);
-        butInstall.textContent = 'Installed!';
     });
 
 });
@@ -25,5 +23,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
 window.addEventListener('appinstalled', (event) => {
     console.log("app installed...");
     console.log('👍', 'appinstalled', event);
+    butInstall.style.display = "none";
+    butInstall.style.visibility = 'hidden';
 });
 
